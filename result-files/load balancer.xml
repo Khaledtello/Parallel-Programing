@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="218" it="0" lt="218" ct="2" ts="1779047536539" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="295" sby="275" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8002&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="231" it="0" lt="231" ct="1" ts="1779047536638" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8000&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="249" it="0" lt="249" ct="0" ts="1779047536739" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8001&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="214" it="0" lt="214" ct="0" ts="1779047536839" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8002&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="222" it="0" lt="222" ct="1" ts="1779047536937" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8000&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="229" it="0" lt="229" ct="1" ts="1779047537039" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-6" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8001&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="240" it="0" lt="240" ct="0" ts="1779047537139" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-7" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8002&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="226" it="0" lt="226" ct="1" ts="1779047537238" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-8" dt="text" by="295" sby="256" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8000&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="221" it="0" lt="221" ct="0" ts="1779047537338" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-9" dt="text" by="295" sby="256" ng="2" na="2">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8001&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+<httpSample t="212" it="0" lt="212" ct="0" ts="1779047537438" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-10" dt="text" by="295" sby="256" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;port&quot;:&quot;8002&quot;}</responseData>
+  <java.net.URL>http://localhost:8080/api/server</java.net.URL>
+</httpSample>
+
+</testResults>

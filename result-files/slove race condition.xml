@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="3740" it="0" lt="3719" ct="2" ts="1779118783147" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-1" dt="text" by="402" sby="274" ng="10" na="10">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3562" it="0" lt="3541" ct="1" ts="1779118783345" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-3" dt="text" by="402" sby="274" ng="9" na="9">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3482" it="0" lt="3462" ct="1" ts="1779118783444" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-4" dt="text" by="402" sby="274" ng="8" na="8">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3402" it="0" lt="3382" ct="1" ts="1779118783545" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-5" dt="text" by="402" sby="274" ng="7" na="7">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3727" it="0" lt="3606" ct="1" ts="1779118783244" s="true" lb="HTTP Request" rc="201" rm="Created" tn="Thread Group 1-2" dt="text" by="418" sby="274" ng="6" na="6">
+  <responseData class="java.lang.String">{&quot;status&quot;:true,&quot;message&quot;:&quot;Booking completed successfully&quot;,&quot;data&quot;:{&quot;booking_id&quot;:30}}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3344" it="0" lt="3303" ct="1" ts="1779118783645" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-6" dt="text" by="402" sby="274" ng="5" na="5">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3256" it="0" lt="3232" ct="1" ts="1779118783744" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-7" dt="text" by="402" sby="274" ng="4" na="4">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3174" it="0" lt="3154" ct="1" ts="1779118783844" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-8" dt="text" by="402" sby="274" ng="3" na="3">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3115" it="0" lt="3076" ct="1" ts="1779118783945" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-9" dt="text" by="402" sby="274" ng="2" na="2">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+<httpSample t="3041" it="0" lt="3010" ct="1" ts="1779118784043" s="false" lb="HTTP Request" rc="409" rm="Conflict" tn="Thread Group 1-10" dt="text" by="402" sby="274" ng="1" na="1">
+  <responseData class="java.lang.String">{&quot;status&quot;:false,&quot;message&quot;:&quot;Seat is not available&quot;,&quot;error&quot;:&quot;error&quot;}</responseData>
+  <java.net.URL>http://ticket-booking-engine.test/api/v2/bookings</java.net.URL>
+</httpSample>
+
+</testResults>
