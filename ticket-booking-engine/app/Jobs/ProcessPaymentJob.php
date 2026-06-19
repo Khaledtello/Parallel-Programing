@@ -10,6 +10,7 @@ use App\Models\EventSeat;
 use App\Models\User;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
@@ -70,6 +71,8 @@ class ProcessPaymentJob implements ShouldQueue
 
                 $eventSeat->update(['status' => EventSeatStatus::Available]);
 
+                Cache::forget("available_seats_{$eventSeat->event_id}");
+
                 Log::warning('Insufficient balance', [
                     'booking_id' => $booking->id,
                     'user_id' => $user->id,
@@ -96,6 +99,8 @@ class ProcessPaymentJob implements ShouldQueue
                 ]);
 
                 $eventSeat->update(['status' => EventSeatStatus::Available]);
+
+                Cache::forget("available_seats_{$eventSeat->event_id}");
 
                 Log::error('Payment gateway failure', [
                     'booking_id' => $booking->id,

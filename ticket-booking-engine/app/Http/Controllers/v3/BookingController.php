@@ -12,8 +12,10 @@ use App\Models\Booking;
 use App\Models\EventSeat;
 use App\Models\User;
 use App\Traits\ApiResponse;
+use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
@@ -57,8 +59,6 @@ class BookingController extends Controller
 
             Log::info('Seat is available');
 
-            sleep(1);
-
             /*
             |--------------------------------------------------------------------------
             | Step 2: Create Pending Booking
@@ -73,6 +73,8 @@ class BookingController extends Controller
             ]);
 
             $eventSeat->update(['status' => EventSeatStatus::Reserved]);
+
+            Cache::forget("available_seats_{$eventSeat->event_id}");
 
             Log::info('Pending booking created', [
                 'booking_id' => $booking->id,

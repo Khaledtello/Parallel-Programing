@@ -20,6 +20,11 @@ Route::get('/user', function (Request $request) {
 
 Route::prefix('v1')->group(function () {
     Route::post('/bookings', [v1\BookingController::class, 'store']);
+    
+    Route::get('/events', [v1\EventController::class, 'index']);
+    Route::get('/events/{event}', [v1\EventController::class, 'show']);
+    Route::get('/popular-events', [v1\EventController::class, 'popularEvents']);
+    Route::get('/available-seats/{event}', [v1\EventController::class, 'availableSeats']);
 
     Route::get('/test-report', function () {
         GenerateDailySalesReportJobV1::dispatch();
@@ -32,14 +37,14 @@ Route::prefix('v2')->group(function () {
 
     Route::get('/test-report', function () {
         GenerateDailySalesReportJobV2::dispatch();
-        GenerateDailySalesReportJobV2::dispatch();
-        GenerateDailySalesReportJobV2::dispatch();
-        GenerateDailySalesReportJobV2::dispatch();
-        GenerateDailySalesReportJobV2::dispatch();
         return 'Report job dispatched';
     });
 });
 
 Route::prefix('v3')->group(function () {
     Route::post('/bookings', [v3\BookingController::class, 'store']);
+    Route::get('/events', [v3\EventController::class, 'index']);
+    Route::get('/events/{event}', [v3\EventController::class, 'show']);
+    Route::get('/popular-events', [v3\EventController::class, 'popularEvents']);
+    Route::get('/available-seats/{event}', [v3\EventController::class, 'availableSeats']);
 });

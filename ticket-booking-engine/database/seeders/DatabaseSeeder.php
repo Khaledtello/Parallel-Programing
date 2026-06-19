@@ -26,7 +26,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($venues as $venue) {
             foreach (range('A', 'J') as $row) {
-                for ($i = 1; $i <= 100; $i++) {
+                for ($i = 1; $i <= 50; $i++) {
                     Seat::create([
                         'venue_id'    => $venue->id,
                         'seat_number' => $row . $i
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
                 }
             }
 
-            Event::factory(4)->create(['venue_id' => $venue->id]);
+            Event::factory(10)->create(['venue_id' => $venue->id]);
         }
 
         $events = Event::all();
